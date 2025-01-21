@@ -1,5 +1,7 @@
+import { Container } from "../ui/container";
+
 const Navbar = () => {
-  return <div>Navbar</div>;
+  return <Container>Navbar</Container>;
 };
 
 export default Navbar;
