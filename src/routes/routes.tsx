@@ -1,6 +1,6 @@
 import { useRoutes } from "react-router-dom";
-import Layout from "../components/layout/layout";
 import Home from "../components/home/home";
+import Layout from "../shared/layout/layout";
 
 const MyRoutes = () => {
   return useRoutes([

@@ -1,4 +1,4 @@
-import { Container } from "../ui/container";
+import { Container } from "../../shared/ui/container";
 
 const Home = () => {
   return <Container>Home</Container>;
