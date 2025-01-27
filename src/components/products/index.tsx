@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import React from "react";
+import { FC } from "react";
 
 import Card from "../card";
 
@@ -24,7 +24,7 @@ const CardContainer = styled.ul`
   }
 `;
 
-const Products: React.FC = () => {
+const Products:FC = () => {
   return (
     <div>
       <CardContainer>

@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
-import React from "react";
+import { Fragment } from "react/jsx-runtime";
 
 import Button from "../../shared/ui/button";
 
-import spiderMan from "../../../public/images/spider-man.png";
+import joker from "../../../public/images/joker.png";
 
 const CardItem = styled.li`
   width: 100%;
@@ -65,9 +65,9 @@ const CardStock = styled.p`
 
 const Card = () => {
   return (
-    <React.Fragment>
+    <Fragment>
       <CardItem>
-        <img src={spiderMan} alt="spider man image" />
+        <img src={joker} alt="spider man image" loading="lazy" />
         <CardContent>
           <CardName>Человек-паук</CardName>
           <CardSize>Размеры: 48-52</CardSize>
@@ -78,7 +78,7 @@ const Card = () => {
           <CardStock>В наличии: {1}</CardStock>
         </CardContent>
       </CardItem>
-    </React.Fragment>
+    </Fragment>
   );
 };
 

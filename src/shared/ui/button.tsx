@@ -1,4 +1,4 @@
-import React from "react";
+import { FC } from "react";
 import styled from "styled-components";
 
 type Props = {
@@ -32,7 +32,7 @@ const ButtonContainer = styled.button<Props>`
   cursor: pointer;
 `;
 
-const Button: React.FC<Props> = ({ children, type, size, onclick }) => {
+const Button: FC<Props> = ({ children, type, size, onclick }) => {
   return (
     <ButtonContainer size={size} type={type} onClick={onclick}>
       {children}
