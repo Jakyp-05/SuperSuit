@@ -1,3 +1,5 @@
+import { FC } from "react";
+
 import styled from "styled-components";
 
 type Props = React.DetailedHTMLProps<
@@ -5,14 +7,14 @@ type Props = React.DetailedHTMLProps<
   HTMLInputElement
 > & {};
 
-const Input = (props: Props) => {
+const Input: FC<Props> = (props) => {
   return <InputContainer {...props} />;
 };
 
 export default Input;
 
 const InputContainer = styled.input`
-  width: 100%;
+  width: 94%;
   padding: 16px;
   border: 1px solid #e5e5e5;
   background-color: transparent;

@@ -70,8 +70,7 @@ const Dropdown: FC = () => {
 export default Dropdown;
 
 const DropdownContainer = styled.div`
-  width: 100%;
-  height: 58px;
+  width: 94%;
   border: 1px solid #e5e5e5;
   border-radius: 3px;
   display: flex;
@@ -79,6 +78,9 @@ const DropdownContainer = styled.div`
   justify-content: space-between;
   padding: 20px 16px;
   cursor: pointer;
+  position: relative;
+  margin-top: 16px;
+  margin-bottom: 15px;
 `;
 
 const DropdownText = styled.span`
@@ -90,13 +92,15 @@ const DropdownText = styled.span`
 `;
 
 const PopupDropdown = styled.ul`
-  width: 100%;
+  width: 86%;
   padding: 20px 16px;
   background-color: white;
   display: flex;
   flex-direction: column;
   row-gap: 5px;
   list-style-type: none;
+  position: absolute;
+  z-index: 1;
 `;
 
 const PopupDropdownText = styled.li`

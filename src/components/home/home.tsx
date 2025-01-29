@@ -1,12 +1,8 @@
-import { Container } from "../../shared/ui/container";
-import Dropdown from "../../shared/ui/dropdown";
+// import { Container } from "../../shared/ui/container";
+import Modal from "../../shared/ui/modal";
 
 const Home = () => {
-  return (
-    <Container>
-      <Dropdown />
-    </Container>
-  );
+  return <Modal />;
 };
 
 export default Home;
